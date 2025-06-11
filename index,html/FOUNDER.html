@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kantin Ghandy - Founder</title>
+  <style>
+   /* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ff6347;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 0.8em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #ffe000;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffe000;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Founder Section */
+.founder-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.founder-image {
+  max-width: 300px; /* atau ukuran sesuai keinginan */
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* membuatnya petak */
+  overflow: hidden;
+  border: 5px solid #ff6347;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.founder-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* agar gambar tetap rapi */
+}
+
+
+
+
+
+.founder-info h3 {
+  color: #333;
+  font-size: 2em;
+}
+
+.founder-info p {
+  font-size: 1.1em;
+  color: #555;
+  text-align: justify;
+}
+
+.founder-info .role {
+  font-weight: bold;
+  color: #ff6347;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+  .founder-profile {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KANTIN GHANDY</h1>
+    <p>Nikmati Kelezatan Makanan Kami!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="founder.html">Founder</a></li>
+            <li><a href="lokasi.html">lokasi</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Profil Pendiri</h2>
+    <section class="founder-profile">
+      <div class="founder-image">
+        <!-- GANTI src DENGAN RELATIVE PATH ATAU UPLOAD KE FOLDER PROYEK -->
+        <img src="c:\Users\ACER\Downloads\foto pendiri.jpg" alt="Foto Pendiri">
+      </div>
+      <div class="founder-info">
+        <h3>Ghandy </h3>
+        <span class="role">Founder & CEO</span>
+        <p>Halo! Saya muhammad gufron,dandy arya dan hanif pahlepi, pendiri dari Kantin Ghandy. Sejak kecil, saya memiliki kecintaan besar terhadap dunia kuliner. Berawal dari dapur kecil di rumah, kini saya mewujudkan mimpi membuka usaha yang menyajikan makanan lezat dan terjangkau untuk semua kalangan.</p>
+        <p>Setiap menu yang kami sajikan adalah hasil racikan penuh cinta dan perhatian, demi menciptakan pengalaman makan yang menyenangkan untuk pelanggan kami.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kantin Ghandy. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
